@@ -16,18 +16,18 @@ spec:
     spec:
       containers:
       - name: api
-        image: iacaksws1<YOU-NAME>acr.azurecr.io/apia:v1
+        image: azurenamingtooltfregistry.azurecr.io/apia:1.0.0
         imagePullPolicy: IfNotPresent
         resources: {}
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 80
-          initialDelaySeconds: 3
-          periodSeconds: 3    
-        readinessProbe:
-          httpGet:
-            path: /readiness
-            port: 80
-          initialDelaySeconds: 3
-          periodSeconds: 3
+        # livenessProbe:
+        #   httpGet:
+        #     path: /health
+        #     port: 80
+        #   initialDelaySeconds: 3
+        #   periodSeconds: 3    
+        # readinessProbe:
+        #   httpGet:
+        #     path: /readiness
+        #     port: 80
+        #   initialDelaySeconds: 3
+        #   periodSeconds: 3

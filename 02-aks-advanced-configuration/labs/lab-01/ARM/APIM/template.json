@@ -10,10 +10,11 @@
       }
     },
     "variables": {
-      "prefix": "iac-ws2",
-      "vnetName": "[concat(variables('prefix'), '-vnet')]",
+      "prefix": "chinedu",
+      // "vnetName": "[concat(variables('prefix'), '-vnet')]",
+      "vnetName": "onprem-vnet",
       "apimServiceName": "[concat(variables('prefix'), '-', parameters('userName'), '-apim')]",
-      "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('vnetName'), 'apim-net')]"
+      "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('vnetName'), 'apim-Snet')]"
     },
     "resources": [
       {
